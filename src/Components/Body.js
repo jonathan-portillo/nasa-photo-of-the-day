@@ -1,7 +1,11 @@
 import React from "react";
 
-const Body = () => {
-  return <div>This is le Body</div>;
+const Body = (props) => {
+  const { imgUrl } = props;
+  return (
+    <div>
+      <img className="nasa-photo" alt="todays-image" src={imgUrl.url} />
+    </div>
+  );
 };
-
 export default Body;
